@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Watch & Earn on Android</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #111;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 16px;
+      color: #333;
+    }
+    .icons {
+      margin: 20px 0;
+    }
+    .icons img {
+      height: 50px;
+      margin: 0 10px;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 28px;
+      font-size: 18px;
+      color: white;
+      background-color: #22c55e;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #16a34a;
+    }
+    .note {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #777;
+    }
+    .countdown {
+      font-size: 20px;
+      font-weight: bold;
+      color: #dc2626;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Watch 3 Viral Videos That Are Paying Users – Only on Android!</h1>
+    <p>Exclusive access for US Android users. Start watching and earning right now.</p>
+
+    <div class="icons">
+      <img src="https://unpkg.com/simple-icons@latest/icons/android.svg" alt="Android Logo" />
+      <img src="https://cdn-icons-png.flaticon.com/512/633/633611.png" alt="Money Icon" />
+      <img src="https://cdn-icons-png.flaticon.com/512/15/15874.png" alt="Phone Icon" />
+    </div>
+
+    <div class="countdown">
+      Offer expires in: <span id="timer">03:00</span>
+    </div>
+
+    <a href="https://singingfiles.com/show.php?l=0&u=2331420&id=68776" class="cta-button" target="_blank">
+      Unlock the Videos Now
+    </a>
+
+    <p class="note">You're going to an affiliate content provider – no malware, no spam.</p>
+  </div>
+
+  <script>
+    // Countdown timer script
+    let time = 180;
+    const timerDisplay = document.getElementById("timer");
+
+    const countdown = setInterval(() => {
+      const minutes = Math.floor(time / 60);
+      const seconds = time % 60;
+      timerDisplay.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+      time--;
+
+      if (time < 0) {
+        clearInterval(countdown);
+        timerDisplay.textContent = "Expired!";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
